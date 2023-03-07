@@ -8,6 +8,16 @@ public class ProductDao {
 	
 	private int count;
 	
+	//3) 기본생성자 정의
+	public ProductDao() {
+		System.out.println("::::: ProductDao 기본 생성자 :::::");
+	}
+	
+	public void setCount(@Value("22") int count) {
+		System.out.println("---- ProductDao setter 메소드 ----");
+		this.count = count;
+	}
+	
 	public ProductDao(@Value("10") int count) {
 		System.out.println("::::: ProductDao 생성자 - int value 전달 :::");
 		this.count=count;
