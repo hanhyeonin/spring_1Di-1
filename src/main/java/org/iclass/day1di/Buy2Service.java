@@ -8,7 +8,7 @@ import lombok.Setter;
 @Component
 public class Buy2Service {
 	
-	@Autowired
+	@Autowired   //다른 bean 이름 지정안하면 자동으로 일치하는 type으로 bean 가져오기
 	private Buy2Dao dao;
 	
 //	public Buy2Service(Buy2Dao dao) {

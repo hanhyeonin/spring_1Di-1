@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import lombok.Setter;
 
-@Component
+@Component(value = "controller")
 public class Buy2Controller {
 	
 	@Autowired				//이미 만들진 Buy2Service 객체(bean)을 자동 주입
