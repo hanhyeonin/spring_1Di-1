@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class ProductService {
 	
-	private ProductDao dao;
+	private ProductDao dao;			
 	
 	//3) setter 주입을 위해서 기본생성자 정의
 	public ProductService() {

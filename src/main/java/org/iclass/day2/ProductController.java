@@ -14,7 +14,8 @@ public class ProductController {
 	}
 	
 	@Autowired
-	public void setService(ProductService service) {
+	public void setService(ProductService service) {   
+		//파라미터 의존관계 - 타입이 bean 이면 @Autowired(자동주입-ProductService type 일치하는 bean 선택)
 		System.out.println("---- ProductController setter 메소드 ----");
 		this.service = service;
 	}

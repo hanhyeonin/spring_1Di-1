@@ -9,11 +9,11 @@ public class ProductApp {
 		ApplicationContext context
 		= new AnnotationConfigApplicationContext(ProductConfig.class);
 		
-//		ProductDao dao = context.getBean(ProductDao.class);
-//		dao.product();
-		
-//		ProductService service = context.getBean(ProductService.class);
-//		service.product();
+		ProductDao dao = context.getBean(ProductDao.class);
+		dao.product();
+		System.out.println("\n");
+		ProductService service = context.getBean(ProductService.class);
+		service.product();
 	}
 
 }

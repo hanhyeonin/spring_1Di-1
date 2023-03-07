@@ -29,4 +29,4 @@ public class Buy2Controller {
 		service.buy();
 	}
 }
-//@Component 어노테이션 : bean으로 만들어질 클래스 위에 설정합니다.
+//@Component 어노테이션 : bean으로 만들어질 클래스 위에 설정합니다.즉 bean으로 만들어 줍니다.
